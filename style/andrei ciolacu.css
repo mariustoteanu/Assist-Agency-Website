@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.about{
+    height: 100vh;
+    display: flex;
+}
+
+.about-him{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    z-index: 3;
+}
+
+.about-him h2{
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: var(--font-size-large);
+    vertical-align: center;
+    color: var(--font-color-primary);
+    font-weight: lighter;
+    font-size: var(--font-size-large);
+    margin-bottom:10px;
+    font-style: italic;
+    border-bottom: 3px solid var(--font-color-primary);
+
+}
+
+
+
+.about-him span{
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: var(--font-size-large);
+    vertical-align: center;
+    color: var(--text-primary-two);
+    font-size: var(--font-size-extra-large);
+    font-weight: bolder;
+    text-transform: uppercase;
+    vertical-align:baseline;
+    font-style: normal;
+}
+
+.about-him p{
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: var(--font-size-large);
+    vertical-align: middle;
+    color: var(--font-color-primary);
+    font-weight: lighter;
+    font-size: var(--font-size-large);
+    font-style: italic;
+    letter-spacing: 2px;
+    margin: 2px;
+}
+
+.about-him .icon{
+    vertical-align: middle;
+}
+
+.about-him p .icons{
+    margin: 2px 0px 0px 2px;
+    padding: 0px;
+}
+
+span .Romania{
+    width: 60px;
+}
+
+.about-him .Craiova{
+    width: 60px;
+}
+
+/* imagine dreapta fotbalist */
+.photo{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 3;
+}
+
+.photo img{
+    border: 10px solid var(--font-color-primary);
+    border-radius: 25px;
+    transition: all 2s;
+    height: 800px;
+}
+
+.photo img:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 400px) {
+    .about{
+        flex-direction: column;
+    }
+
+    .about-him{
+        flex-direction: column;
+    }
+
+    .photo{
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,222 @@
+:root {
+    --text-primary-two: rgb(218, 187, 255);
+    --font-color-primary: rgb(127, 154, 2);
+    --font-color-secondary: rgb(102, 0, 145);
+    --font-text-light: #eaeaea;
+
+    --bg-primary: rgb(218, 187, 255);
+    --bg-secondary: wrgb(235, 232, 232);
+    --bg-dark: rgb(102, 0, 145);
+    --bg-light: #ffffff;
+
+    --button-color: rgb(127, 154, 2);
+
+    --font-size-extra-large: 9rem;
+    --font-size-large: 1.9rem;
+    --font-size-intermedium: 1rem;
+    --font-size-medium: 0.875rem;
+    --font-size-small: 0.75rem;
+    --font-family:'Secular One', sans-serif;
+
+    --spacing-xl: 2.625rem;
+    --spacing-large: 1.75rem;
+    --spacing-medium: 1rem;
+    --spacing-small: 0.5rem;
+    --spacing-tiny: 0.25rem;
+
+    --mobile-logo-height: 45px;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* sectiunea header nav */
+header{
+    background-color: var(--bg-primary);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+
+.container nav{
+    max-width: 2000px;
+    min-width: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+header nav ul li a{
+    color: var(--font-color-primary);
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: var(--font-size-large);
+    text-transform: uppercase;
+    padding: var(--spacing-medium);
+}
+
+header nav ul li a:hover{
+    color: white;
+}
+
+
+header nav img{
+    width: 65px;
+    height: auto;
+}
+
+nav .players{
+    position: relative;
+}
+
+nav .secondary-menu{
+    position: absolute;
+    font-family: var(--font-family);
+    top: calc(100% - var(--spacing-tiny));
+    left: var(--spacing-medium);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-large);
+    text-align: center;
+}
+
+.player-name{
+    background-color: var(--text-primary-two);
+    border: 4px solid white;
+    border-radius: 22px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-size-intermedium);
+    width: 150%;
+}
+
+.players:hover .secondary-menu{
+    display: block;
+}
+
+
+
+/* sectiunea  main */
+main{
+        background-image: url(../IMG_20190706_123152.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        flex-grow: 1;
+        margin: 0;
+        height: 100vh;
+        position: relative;
+    }
+
+main .overlay{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(102, 0, 145, 0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+
+main .container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.container{
+    max-width: 2000px;
+    min-width: 320px;
+    margin:auto;
+}
+/* sectiunea footer */
+footer{
+    background-color: var(--bg-primary);
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: var(--font-size-large);
+    text-transform: uppercase;
+    padding: var(--spacing-medium);
+    color: var(--font-color-primary);
+    vertical-align: center;
+    z-index: 4;
+}
+
+a{
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: var(--font-size-large);
+    vertical-align: center;
+    color: var(--font-color-primary);
+}
+footer img{
+        width: 25px;
+        height: auto;
+        vertical-align: middle;
+    }
+
+
+footer .container{
+    display: flex;
+    justify-content: center;
+}
+
+
+.container{
+    max-width: 2000px;
+    min-width: 320px;
+    margin:auto;
+}
+
+@media (max-width: 400px) {
+    header .container{
+        flex-direction: column;
+    }
+
+    main .container{
+        flex-direction: column;
+    }
+
+    footer .container{
+        flex-direction: column;
+    }
+
+    .container nav{
+        flex-direction: column;
+    }
+  }
+    
+  @media (max-width: 400px) {
+    .about{
+        flex-direction: column;
+    }
+
+    .about-him{
+        flex-direction: column;
+    }
+
+    .photo{
+        flex-direction: column;
+    }
+
+}
+
+

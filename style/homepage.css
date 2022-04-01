@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+}
+
+/* sectiunea welcome */
+
+
+.welcome {
+    height: 30%;
+    width: 100%;
+    background-color: var(--bg-primary);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-welcome{
+    text-transform: uppercase;
+    font-family: var(--font-family);
+    font-weight: bolder;
+    color: var(--font-color-secondary);
+    vertical-align: center;
+    padding: var(--spacing-low);
+    color: var(--font-color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.container-welcome h1{
+    font-size: 60px;
+    font-weight: lighter;
+    color: var(--font-color-primary);
+    align-items: center;
+    margin: auto;
+}
+
+
+.welcome .assist{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-family: var(--font-family);
+    font-weight: bolder;
+    color: var(--font-color-secondary);
+    vertical-align: middle;
+}
+
+.container-welcome p{
+    font-size: var(--font-size-small);
+    font-weight: lighter;
+    color: var(--font-color-primary);
+    align-items: center;
+    margin: 0;
+}
+
+/* sectiunea despre noi */
+
+.about-us{
+    height: 70%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 350px;
+    left: 0;
+    z-index: 2;
+}
+
+.container-about-us, .container-about-us .container{
+    z-index: 2;
+}
+
+.container-about-us h1{
+        font-size: 60px;
+        font-weight: bolder;
+        font-family: var(--font-family);
+        color: var(--font-color-primary);
+        align-items: center;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        border-bottom: 5px solid var(--font-color-primary);
+}
+
+
+.col-md-offset-2-col-md-8{
+    width: 100%;
+    display: grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin: auto;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.testimonial{
+    padding: 70px 30px 50px;
+    margin: 50px 30px 30px;
+    border: 3px solid var(--font-color-primary);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+    padding: 2.4rem;
+    margin-bottom: 4.8rem;
+    border-radius: 1.6rem;
+}
+.testimonial .pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid var(--font-color-primary);
+    overflow: hidden;
+    margin: 0 auto;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    vertical-align: middle;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.testimonial .description{
+    font-size: var(--font-size-meidum);
+    color: var(--font-color-primary);
+    line-height: 27px;
+    text-align: center;
+    margin: 0;
+    font-family: var(--font-family);
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+
+.testimonial .title{
+    display: inline-table;
+    padding: 10px;
+    margin: 0 auto;
+    background: #fff;
+    border: 2px solid var(--font-color-primary);
+    border-radius: 15px;
+    font-size: var(--font-size-large);
+    font-weight: bold;
+    color: var(--font-color-primary);
+    font-family: var(--font-family);
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+
+@media (max-width: 400px) {
+    .container-about-us h1{
+        flex-direction: column;
+    }
+
+    .welcome{
+        flex-direction: column;
+    }
+
+  }
+    
