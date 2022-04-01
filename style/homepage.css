@@ -13,6 +13,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 .container-welcome{
@@ -65,8 +68,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 350px;
+    position: relative;
+    top: 0;
     left: 0;
     z-index: 2;
 }

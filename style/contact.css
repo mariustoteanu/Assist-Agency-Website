@@ -12,6 +12,9 @@
     margin: auto;
     min-height: 80vh;
     z-index: 2;
+    position: relative;
+    top: 250px;
+    left: 0;
 }
 
 .contact-wrapper{

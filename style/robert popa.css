@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -35,7 +37,7 @@
     margin-bottom: 10px;
 }
 
-.about-him span{
+.about-him h2 span{
     text-decoration: none;
     font-family: var(--font-family);
     font-size: var(--font-size-large);
@@ -51,10 +53,8 @@
 }
 
 .about-him p{
-    text-decoration: none;
     font-family: var(--font-family);
     font-size: var(--font-size-large);
-    vertical-align: middle;
     color: var(--font-color-primary);
     font-weight: lighter;
     font-size: var(--font-size-large);
@@ -68,18 +68,13 @@
 .about-him p .icons{
     margin: 2px 0px 0px 2px;
     padding: 0px;
-}
-
-.about-him .icons{
-    padding: 0%;
-    vertical-align: middle;
+    height: auto;
 }
 
 
 span .Romania{
     width: 60px;
     margin: 2px 0px 0px 2px;
-    padding: 0px;
 }
 
 .about-him .Craiova{

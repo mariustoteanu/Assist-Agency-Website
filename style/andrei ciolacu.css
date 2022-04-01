@@ -35,7 +35,7 @@
 
 
 
-.about-him span{
+.about-him h2 span{
     text-decoration: none;
     font-family: var(--font-family);
     font-size: var(--font-size-large);
